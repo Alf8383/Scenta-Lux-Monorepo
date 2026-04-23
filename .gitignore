@@ -1,50 +1,36 @@
-# =========================
-# Archivos y carpetas comunes
-# =========================
-HELP.md
-target/
-logs/
-uploads/
-
-# Evitar incluir builds anidados
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-# =========================
-# Archivos de IDEs y herramientas
-# =========================
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
 .vscode/
+*.iml
 
-# =========================
-# Configuraciones locales
-# =========================
-application-local.properties
-application-dev.properties
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Backend
+backend/target/
+backend/logs/
+backend/uploads/
+backend/application-local.properties
+backend/application-dev.properties
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/coverage/
+frontend/.vercel/
+frontend/.genkit/
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
